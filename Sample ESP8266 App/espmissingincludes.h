@@ -27,6 +27,8 @@
 //MOST OF THESE ARE GUESSED! but they seem to work and shut up the compiler.
 typedef struct espconn espconn;
 
+void uart_init_2(UartBautRate uart0_br, UartBautRate uart1_br);
+
 bool wifi_station_set_hostname(char *);
 char *wifi_station_get_hostname(void);
 
