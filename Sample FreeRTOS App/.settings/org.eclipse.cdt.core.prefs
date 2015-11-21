@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.2087258155/ESP8266_SDK_ROOT/delimiter=\:
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.2087258155/ESP8266_SDK_ROOT/operation=replace
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.2087258155/ESP8266_SDK_ROOT/value=/home/kolban/git/ESP8266_RTOS_SDK
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.2087258155/append=true
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.2087258155/appendContributed=true
