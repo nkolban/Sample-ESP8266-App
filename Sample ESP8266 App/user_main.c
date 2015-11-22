@@ -2,7 +2,6 @@
 #include "user_interface.h"
 #include "pwm.h"
 #include "uart.h"
-#include "osapi.h"
 #include "mem.h"
 #include "espmissingincludes.h"
 

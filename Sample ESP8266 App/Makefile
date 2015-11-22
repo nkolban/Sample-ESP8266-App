@@ -1,3 +1,6 @@
+#
+# Sample ESP8266 App
+#
 PROJ_NAME=sampleESP8266App
 COMPORT=/dev/ttyUSB0
 OBJS=user_main.o uart.o
