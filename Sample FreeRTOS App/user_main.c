@@ -91,8 +91,23 @@ void taskConnect(void *pData) {
   }
 }
 
+void setupUART1() {
+  UART_ConfigTypeDef uart_config;
+  uart_config.baud_rate = BIT_RATE_115200;
+  uart_config.data_bits = UART_WordLength_8b;
+  uart_config.parity = USART_Parity_None;
+  uart_config.stop_bits = USART_StopBits_1;
+  uart_config.flow_ctrl = USART_HardwareFlowControl_None;
+  uart_config.UART_RxFlowThresh = 120;
+  uart_config.UART_InverseMask = UART_None_Inverse;
+  UART_ParamConfig(UART1, &uart_config);
+
+  UART_SetPrintPort(UART1);
+}
+
 void user_init(void) {
   uart_init_new();
+  setupUART1();
   UART_SetBaudrate(UART0, 115200);
   printf("SDK version:%s\n", system_get_sdk_version());
   printf("Free heap size: %d\n", system_get_free_heap_size());
